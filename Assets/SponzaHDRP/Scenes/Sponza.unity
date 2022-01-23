@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3076.5654, g: 2556.8105, b: 2612.3828, a: 1}
+  m_IndirectSpecularColor: {r: 2865.246, g: 2226.7695, b: 1897.9902, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 267507042}
   - component: {fileID: 267507041}
   - component: {fileID: 267507040}
+  - component: {fileID: 267507044}
   m_Layer: 0
   m_Name: PlayerStart
   m_TagString: Untagged
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_LevelType: 1
   OnMessageRecieved:
   - {fileID: 267507041}
+  - {fileID: 267507044}
 --- !u!4 &267507043
 Transform:
   m_ObjectHideFlags: 0
@@ -207,14 +209,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267507039}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000025629995}
   m_LocalPosition: {x: 0, y: 0, z: 10.621}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &267507044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267507039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 'Show Cursor / Lock: None'
+  LockState: 1
+  CursorVisible: 0
 --- !u!1 &1441118597
 GameObject:
   m_ObjectHideFlags: 0
